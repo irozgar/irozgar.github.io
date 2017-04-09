@@ -1,0 +1,56 @@
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
+    color: rgb(88, 89, 89);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#links li {
+    margin: 3em;
+}
+
+#links li a {
+    transition: color 0.5s ease;
+    color: darkgrey;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#links li a span {
+    alignment-baseline: middle;
+}
+
+#links li a:hover {
+    color: orangered;
+}
+
+#links li a svg {
+    transition: fill 0.5s ease;
+    /*fill: whitesmoke;*/
+    fill: darkgrey;
+    height: 2em;
+    width: auto;
+    margin-right: 0.5em;
+}
+
+#links li a:hover svg {
+    fill: orangered;
+}
