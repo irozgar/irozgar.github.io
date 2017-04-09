@@ -14,16 +14,14 @@ body {
 
 h1 {
     font-size: 3em;
+    text-align: center;
 }
 
 #links {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
-}
-
-#links li {
-    margin: 3em;
 }
 
 #links li a {
@@ -31,7 +29,30 @@ h1 {
     color: darkgrey;
     text-decoration: none;
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+@media  (max-width: 576px) {
+  #links li {
+      margin: 1em;
+      flex: none;
+      width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  #links li {
+    flex: 1;
+    margin: 2em;
+  }
+}
+
+@media  (min-width: 768px) {
+ #links li {
+   flex: 1;
+   margin: 3em;
+ }
 }
 
 #links li a span {
