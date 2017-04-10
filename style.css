@@ -33,15 +33,31 @@ h1 {
     align-items: center;
 }
 
-@media  (max-width: 576px) {
+@media (min-width: 390px) and (max-width: 622px) {
+    #links {
+        justify-content: space-between;
+    }
+
+    #links li a {
+        justify-content: flex-start;
+    }
+}
+
+#links li {
+    margin: 1em;
+    flex: none;
+    width: 100%;
+}
+
+@media  (min-width: 390px) {
   #links li {
       margin: 1em;
       flex: none;
-      width: 100%;
+      width: 40%;
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 622px) {
   #links li {
     flex: 1;
     margin: 2em;
@@ -65,7 +81,6 @@ h1 {
 
 #links li a svg {
     transition: fill 0.5s ease;
-    /*fill: whitesmoke;*/
     fill: darkgrey;
     height: 2em;
     width: auto;
